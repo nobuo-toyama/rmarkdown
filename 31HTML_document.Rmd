@@ -1,0 +1,36 @@
+---
+title: "31HTML_document"
+author: "nobuo"
+date: "2021/3/24"
+output: 
+  html_document:
+    toc: true
+    toc_depth: 3
+    toc_float: true
+#    number_sections: true
+    df_print: paged
+---
+## 3.1 HTML document
+
+### 3.1.1 Table of contents
+
+#### 3.1.1.1 Floating TOC
+You can specify the toc_float option to float the table of contents to the left of the main document content. The floating table of contents will always be visible even when the document is scrolled.
+
+### 3.1.2 Section numbering
+
+### 3.1.3 Tabbed sections
+
+### 3.1.4 Appearance and style
+
+### 3.1.6 Data frame printing
+
+```{r}
+mtcars
+```
+
+```{r cols.print=3, rows.print=3}
+mtcars
+```
+
+### 3.1.7 Code folding

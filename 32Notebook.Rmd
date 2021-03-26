@@ -1,0 +1,27 @@
+---
+title: "32Notebook"
+author: "nobuo"
+date: "2021/3/24"
+output: html_notebook
+---
+## 3.2 Notebook
+
+### 3.2.1 Using Notebooks
+
+#### 3.2.1.1 Creating a Notebook
+
+```{r}
+summary(iris)
+```
+
+```{r}
+library(ggplot2)
+qplot(Sepal.Length, Petal.Length, data = iris, color = Species, size = Petal.Width)
+```
+```{r}
+2 + 2
+```
+
+
+
+
