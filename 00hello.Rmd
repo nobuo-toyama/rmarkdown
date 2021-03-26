@@ -2,7 +2,9 @@
 title: "hello"
 author: "nobuo"
 date: "2021/3/22"
-output: github_document
+output: 
+  html_document:
+    keep_md: true
 ---
 This is a paragraph in an R Markdown document.
 
