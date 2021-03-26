@@ -1,0 +1,49 @@
+---
+title: "26R_code_chunks"
+author: "nobuo"
+date: "2021/3/22"
+output: html_document
+---
+## 2.6 R code chunks and inline R code
+
+```{r}
+# execute code if the date is later than a specified day
+do_it = Sys.Date() > '2018-02-14'
+```
+
+
+```{r, eval=do_it}
+x = rnorm(100)
+```
+
+```{r, setup, include=FALSE}
+knitr::opts_chunk$set(fig.width = 8, collapse = TRUE)
+```
+
+```{r}
+x = 5  # radius of a circle
+```
+
+For a circle with the radius `r x`,
+its area is `r pi * x^2`.
+
+### 2.6.1 Figures
+
+By default, figures produced by R code will be placed immediately after the code chunk they were generated from. For example:
+
+```{r}
+plot(cars, pch = 18)
+```
+```{r, fig.show='hold', out.width="50%"}
+par(mar = c(4, 4, .2, .1))
+plot(cars, pch = 19)
+plot(pressure, pch = 17)
+```
+
+### 2.6.2 Tables
+
+The easiest way to include tables is by using knitr::kable(), which can create tables for HTML, PDF and Word outputs.3 Table captions can be included by passing caption to the function, e.g.,
+
+```{r tables-mtcars}
+knitr::kable(iris[1:5, ], caption = 'A caption')
+```

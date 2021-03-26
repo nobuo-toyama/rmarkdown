@@ -1,0 +1,78 @@
+---
+title: "25Markdown_syntax"
+author: "nobuo"
+date: "2021/3/22"
+output: html_document
+---
+
+## 2.5 Markdown syntax
+
+### 2.5.1 Inline formatting
+
+_italic text_
+
+**bold text**
+
+H~3~PO~4~
+
+Cu^2+^
+
+Hyperlinks to [RStudio](https://www.rstudio.com).
+
+A footnote example ^[This is a footnote.]
+
+### 2.5.2 Block-level elements
+
+- one item
+- one item
+- one item
+    - one more item
+    - one more item
+    - one more item
+    
+1. the first item
+2. the second item
+3. the third item
+    - one unordered item
+    - one unordered item
+    
+> "I thoroughly disapprove of duels. If a man should challenge me,
+  I would take him kindly and forgivingly by the hand and lead him
+  to a quiet place and kill him."
+>
+> --- Mark Twain
+
+```
+This text is displayed verbatim / preformatted
+```
+
+Or indent by four spaces:
+
+    This text is displayed verbatim / preformatted
+    
+### 2.5.3 Math expressions
+
+Inline LaTeX equations can be written in a pair of dollar signs using the LaTeX syntax, e.g., $f(k) = {n \choose k} p^{k} (1-p)^{n-k}$
+
+math expressions of the display style can be written in a pair of double dollar signs, e.g., $$f(k) = {n \choose k} p^{k} (1-p)^{n-k}$$
+
+You can also use math environments inside $ $ or $$ $$, e.g.,
+
+$$\begin{array}{ccc}
+x_{11} & x_{12} & x_{13}\\
+x_{21} & x_{22} & x_{23}
+\end{array}$$
+
+$$X = \begin{bmatrix}
+1 & x_{1}\\
+1 & x_{2}\\
+1 & x_{3}
+\end{bmatrix}$$
+
+$$\Theta = \begin{pmatrix}\alpha & \beta\\
+\gamma & \delta
+\end{pmatrix}$$
+
+$$\begin{vmatrix}a & b\\
+c & d
+\end{vmatrix}=ad-bc$$
